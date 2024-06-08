@@ -1,47 +1,53 @@
 <!DOCTYPE html>
-<html lang = "en-US">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" herf="./assets/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <title>Generic Company Name</title>
 </head>
 
 <body>
     <header>
-        <h1>Generic Company Name</h1>
-        <nav>
-            <u1>
-                <li>
-                    <a herf="#NavBar">Home</a>
-                </li>
-
-                <li>
-                    <a herf="#NavBar">Picture</a>
-                </li>
-
-                <li>
-                    <a herf="#contact">Contact</a>
-                </li>
-            </u1>
+        <nav class="text-right">
+            <ul>
+                <li><a href="#NavBar">Home</a></li>
+                <li><a href="#NavBar">Picture</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     
     <main>
-        <section id="Home">
-            <h2>Home of Generic Company Name</h2>
-        </section>
+        <h1 class="text-center">Generic Company Name</h1>
 
-        <section id="Picture">
-            <h3>We are a simple generic company!</h3>
-            <figure></figure>
-        </section>
+        <figure>
+            <img src="./assets/img/dolfin.jpg" alt="DolfinBoy">
+        </figure>
 
-        <section id="Contact">
-            <h4>Contact Info</h4>
+        <section id="contact">
+            <h2 class="text-center">Contact Info</h2>
+            <form>
+                <label class="text-right" for="name">Name:</label>
+                <input type="text" id="name">
+
+                <label class="text-right" for="email">Email:</label>
+                <input type="text" id="email">
+
+                <div class="text-center">
+                    <button type="submit">Submit</button>
+                </div>  
+            </form>
         </section>
     </main>
 
+    <footer class="text-center">
+        @ 2024 DolfinChad
+    </footer>
+
 </body>
+
+</html>
 
 </html>
